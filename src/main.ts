@@ -18,6 +18,7 @@ const initApp = (): void => {
     const itemId: number = fullList.list.length
       ? parseInt(fullList.list[fullList.list.length - 1].id) + 1
       : 1;
+    console.log(itemId);
     const newItem = new ListItem(itemId.toString(), newEntryText);
 
     fullList.addItem(newItem);
